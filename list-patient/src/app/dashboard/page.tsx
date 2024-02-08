@@ -1,7 +1,8 @@
 import React from 'react';
 import UpcomingAppointments from '../ui/dashboard/upcomingPatients';
 import { Suspense } from 'react';
-import InviteLink from '../ui/dashboard/invitelink';
+// import InviteLink from '../ui/dashboard/invitelink';
+// import PatientQueue from '../ui/dashboard/patientqueue';
 
 export default function Page() {
   const today = new Date();
@@ -27,11 +28,10 @@ export default function Page() {
           </Suspense>
         </div>
         {/* <div>
-          <Suspense fallback={<InviteLink />}>
-          <InviteLink />
-        </Suspense>
+          <Suspense fallback={<PatientQueue />}>
+          <PatientQueue />
+          </Suspense>
         </div> */}
-
       </div>
   )
 }

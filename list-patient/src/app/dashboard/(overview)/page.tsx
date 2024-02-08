@@ -1,5 +1,5 @@
 import React from 'react';
-import UpcomingAppointments from '../ui/dashboard/upcomingPatients';
+import UpcomingAppointments from '../../ui/dashboard/upcomingPatients';
 import { Suspense } from 'react';
 // import InviteLink from '../ui/dashboard/invitelink';
 // import PatientQueue from '../ui/dashboard/patientqueue';

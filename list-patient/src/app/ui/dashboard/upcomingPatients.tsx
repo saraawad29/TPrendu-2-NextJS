@@ -1,4 +1,4 @@
-import { ArrowDownCircleIcon } from '@heroicons/react/24/outline';
+import { ArrowDownCircleIcon, ArrowLongRightIcon } from '@heroicons/react/24/outline';
 import React from 'react';
 
 
@@ -8,7 +8,8 @@ const upcomingAppointments = [
         patientName: 'Dean Ferrera',
         patientImage: '/path/to/profile-image.jpg',
         since: 'Jan, 2021',
-        time: '3:00 -> 3:30',
+        startTime: '3:00',
+        finTime: '3:30',
     },
 ];
 
@@ -25,7 +26,11 @@ export default function UpcomingPatients() {
                 <div className='py-6 pl-4'>
                     <p className=" font-bold text-l">{appointment.patientName}</p>
                     <p className="text-s">Patient since {appointment.since}</p>
-                    <p className="py-2 text-s font-bold">{appointment.time}</p>
+                    <div className='flex items-center pt-3'>
+                        <p className="text-s font-bold rounded-full bg-[#EBF6F5] w-20 h-6 text-center">{appointment.startTime}</p>
+                        <ArrowLongRightIcon className=" flex rounded-full bg-[#82c6cc] h-5 ml-6 mr-6 w-12 mt-2 text-black" />
+                        <p className=" text-s font-bold rounded-full bg-[#EBF6F5]  w-20 h-6 text-center">{appointment.finTime}</p>
+                    </div>
                 </div>
             </div>
             ))}

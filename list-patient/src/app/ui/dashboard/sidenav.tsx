@@ -5,7 +5,7 @@ import { signOut } from '../../login/auth';
 
 export default function SideNav() {
   return (
-    <div className="flex bg-[#274446] px-3 py-2 pb-1 w-screen">
+    <div className="flex bg-[#274446] pl-[500px] px-3 py-2 pb-1 w-screen">
       <div className="flex grow flex-row items-center mb-2">
         <NavLinks />
         <div className="hidden h-auto w-full grow rounded-md bg-gray-50 md:block"></div>
